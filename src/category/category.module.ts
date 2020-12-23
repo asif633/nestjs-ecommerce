@@ -14,7 +14,8 @@ import { MongooseModule } from '@nestjs/mongoose';
     },
   }])],
   providers: [CategoryService],
-  controllers: [CategoryController]
+  controllers: [CategoryController],
+  exports: [CategoryService]
 })
 export class CategoryModule {
 

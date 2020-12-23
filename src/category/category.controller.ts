@@ -23,7 +23,7 @@ export class CategoryController {
       return this.catService.findOne(id);
     }
 
-    @Get(':slug')
+    @Get('categorybySlug/:slug')
     findOneBySlug(@Param('slug') slug: string) {
       return this.catService.findOneBySlug(slug);
     }
